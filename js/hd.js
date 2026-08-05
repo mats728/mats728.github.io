@@ -30,6 +30,7 @@ loadStylesheet('https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.
 loadStylesheet('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css')
 loadStylesheet('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap')
 loadStylesheet('https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.1.0/mdb.min.css')
+loadStylesheet('css/bas.css')
 
 // 3. Scripts
 loadScript('https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js')

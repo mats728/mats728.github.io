@@ -1,4 +1,4 @@
-async function rd() {
+async function rd(searchTerm) {
     // Wait until initSqlJs is available on the window object
     while (typeof window.initSqlJs !== 'function') {
         await new Promise(resolve => setTimeout(resolve, 50));
@@ -15,7 +15,7 @@ async function rd() {
     const db = new SQL.Database(new Uint8Array(buffer));
 
     const stmt = db.prepare("SELECT * FROM bash WHERE term=?");
-    stmt.bind(["bash"]);
+    stmt.bind([searchTerm]);
 
     const res = [];
     while (stmt.step()) {
@@ -37,7 +37,6 @@ async function rd() {
     return res;
 }
 
-// Automatically trigger once the page and scripts are ready
 window.addEventListener('load', () => {
-    rd();
+    rd("bash");
 });

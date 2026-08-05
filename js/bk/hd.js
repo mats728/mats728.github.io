@@ -6,11 +6,11 @@ function loadStylesheet(href) {
     document.head.appendChild(link)
 }
 
-// Helper function to load scripts (Appended to document.head instead of body)
+// Helper function to load scripts
 function loadScript(src) {
     const script = document.createElement('script')
     script.src = src
-    document.head.appendChild(script)
+    document.body.appendChild(script) // or document.head.appendChild(script)
 }
 
 // 1. Meta and Favicon

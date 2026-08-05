@@ -28,11 +28,10 @@ async function rd(term,qid) {
 
     console.log('result:', res);
 
-    // Return the result to element with id 'Qbash'
-    const targetElement = document.getElementById(qid);
-    if (targetElement) {
-        targetElement.textContent = JSON.stringify(res, null, 2);
-    }
+    // const targetElement = document.getElementById(qid);
+    // if (targetElement) {
+    //     targetElement.textContent = JSON.stringify(res, null, 2);
+    // }
 
 //return res;
 
@@ -42,7 +41,6 @@ res.forEach(item => {
 
         tr.innerHTML = `
             <td><strong>${item.tit}</strong></td>
-            <td><span class="badge bg-info">${item.term}</span></td>
             <td><pre class="badge bg-primary"><code>${item.body}</code></pre></td>
             <td><small class="badge bg-secondary">${item.tim}</small></td>
         `;

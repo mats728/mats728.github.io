@@ -41,13 +41,13 @@ let tit = document.createElement('tr');
 let dat= document.createElement('tr');
 let tr = document.createElement('tr');
 tit.innerHTML = `
-<td><pre class="badge bg-warning fs-4">${item.tit}</pre></td>
+<td><pre class="badge bg-warning fs-6">${item.tit}</pre></td>
 `
 tr.innerHTML = `
-<td><textarea class="badge bg-primary fs-4"><code>${item.body}</code></textarea></td>
+<td><textarea rows=8 cols=100 class="badge bg-primary fs-6"><code>${item.body}</code></textarea></td>
 `;
 dat.innerHTML = `
-<pre td><pre class="badge bg-secondary fs-4">${item.tim}</pre></td>
+<pre td><pre class="badge bg-secondary fs-6">${item.tim}</pre></td>
 `
 tbody.appendChild(tit);
 tit.after(tr);

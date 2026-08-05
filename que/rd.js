@@ -37,7 +37,7 @@ async function rd(term,qid) {
 //return res;
 
 const tbody = document.getElementById('tab');
-data.forEach(item => {
+res.forEach(item => {
         const tr = document.createElement('tr');
 
         tr.innerHTML = `

@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 let tab=document.getElementById("bash")
 let htm=
 `
-<div class="bg-info text-white">bash</div>
+<div class="p-2 bg-info text-white">bash</div>
 <table class="table align-middle text-center">
 <tbody>
 <tr>

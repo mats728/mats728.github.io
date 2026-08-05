@@ -26,7 +26,7 @@ async function rd() {
   console.log('result:', res);
 
   // Return the result to element with id 'Bdb'
-  const targetElement = document.getElementById('DBjs');
+  const targetElement = document.getElementById('Qjs');
   if (targetElement) {
     targetElement.textContent = JSON.stringify(res, null, 2);
   }

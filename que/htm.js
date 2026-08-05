@@ -26,7 +26,7 @@ async function rd() {
   console.log('result:', res);
 
   // Return the result to element with id 'Bdb'
-  const targetElement = document.getElementById('Qbash');
+  const targetElement = document.getElementById('Qhtm');
   if (targetElement) {
     targetElement.textContent = JSON.stringify(res, null, 2);
   }

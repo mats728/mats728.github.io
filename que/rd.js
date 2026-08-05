@@ -42,9 +42,9 @@ res.forEach(item => {
 
         tr.innerHTML = `
             <td><strong>${item.tit}</strong></td>
-            <td><span class="badge bg-secondary">${item.term}</span></td>
-            <td><pre class="mb-0"><code>${item.body}</code></pre></td>
-            <td><small class="text-muted">${item.tim}</small></td>
+            <td><span class="badge bg-info">${item.term}</span></td>
+            <td><pre class="badge bg-primary"><code>${item.body}</code></pre></td>
+            <td><small class="badge bg-secondary">${item.tim}</small></td>
         `;
 
         tbody.appendChild(tr);

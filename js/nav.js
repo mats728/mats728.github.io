@@ -13,19 +13,19 @@ let navbarHTML = `
 </li>
 
 <li class="bg-primary nav-item">
-<a class="nav-link text-white fw-medium" href="bash.htm">bash</a>
+<a class="p-2 nav-link text-white fw-medium" href="bash.htm">bash</a>
 </li>
 <li class="bg-secondary nav-item">
-<a class="nav-link text-white fw-medium" href="cmd.htm">cmd</a>
+<a class="p-2 nav-link text-white fw-medium" href="cmd.htm">cmd</a>
 </li>
 <li class="bg-warning nav-item">
-<a class="nav-link text-white fw-medium" href="db.htm">db</a>
+<a class="p-2 nav-link text-white fw-medium" href="db.htm">db</a>
 </li>
 <li class="bg-danger nav-item">
-<a class="nav-link text-white fw-medium" href="htm.htm">htm</a>
+<a class="p-2 nav-link text-white fw-medium" href="htm.htm">htm</a>
 </li>
 <li class="bg-success nav-item">
-<a class="nav-link text-white fw-medium" href="js.htm">js</a>
+<a class="p-2 nav-link text-white fw-medium" href="js.htm">js</a>
 </li>
 
 </ul>

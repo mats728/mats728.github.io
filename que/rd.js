@@ -47,6 +47,7 @@ res.forEach(item => {
         tr.innerHTML = `
         <td><textarea class="badge bg-primary fs-4"><code>${item.body}</code></textarea></td>
         `;
+});
 
         tit.after(tr);
         let dat= document.createElement('tr');
@@ -54,7 +55,6 @@ dat.innerHTML = `
         <pre td><pre class="badge bg-secondary fs-4">${item.tim}</pre></td>
         `
         tr.after(dat);
-});
 
 }
 

@@ -21,6 +21,9 @@ let navbarHTML = `
 <li class="nav-item">
 <a class="nav-link text-white fw-medium" href="db.htm">db</a>
 </li>
+<li class="nav-item">
+<a class="nav-link text-white fw-medium" href="htm.htm">db</a>
+</li>
 
 </ul>
 </div>

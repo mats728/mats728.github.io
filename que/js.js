@@ -1,5 +1,4 @@
 async function rd(searchTerm) {
-    // Wait until initSqlJs is available on the window object
     while (typeof window.initSqlJs !== 'function') {
         await new Promise(resolve => setTimeout(resolve, 50));
     }

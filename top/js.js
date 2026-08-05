@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-let tab=document.getElementById("Tbash")
+let tab=document.getElementById("Tjs")
 let htm=
 `
-<div class="p-2 bg-primary text-center text-white">bash</div>
+<div class="p-2 bg-warning text-center text-white">js</div>
 <table class="table align-middle text-center">
 <tbody>
 <tr>

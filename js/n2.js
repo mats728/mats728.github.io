@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 let navContainer = document.getElementById('nav');
 
 let navbarHTML = `
-<div class=container-fluid>  
+<div class=container-fluid>
 <ul class="bg-info navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-row gap-3">
 
 <li class="nav-item">
@@ -13,13 +13,13 @@ let navbarHTML = `
 </li>
 
 <li class="nav-item">
-<a class="nav-link text-white fw-medium" href="bio.htm">Bio</a>
+<a class="nav-link text-white fw-medium" href="bash.htm">Bio</a>
 </li>
 <li class="nav-item">
-<a class="nav-link text-white fw-medium" href="vid.htm">Vid</a>
+<a class="nav-link text-white fw-medium" href="cmd.htm">Vid</a>
 </li>
 <li class="nav-item">
-<a class="nav-link text-white fw-medium" href="old.htm">Old</a>
+<a class="nav-link text-white fw-medium" href="db.htm">Old</a>
 </li>
 
 </ul>

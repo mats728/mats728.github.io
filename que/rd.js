@@ -40,7 +40,7 @@ res.forEach(item => {
         const tr = document.createElement('tr');
 
         tr.innerHTML = `
-            <td><strong>${item.tit}</strong></td>
+            <td><pre class="badge bg-info">${item.tit}</pre></td>
             <td><pre class="badge bg-primary"><code>${item.body}</code></pre></td>
             <td><small class="badge bg-secondary">${item.tim}</small></td>
         `;

@@ -41,7 +41,7 @@ let tit = document.createElement('tr');
 let dat= document.createElement('tr');
 let tr = document.createElement('tr');
 tit.innerHTML = `
-<td><pre class="badge bg-warning fs-6">${item.tit}</pre></td>
+<td><pre class="p-2 text-white bg-warning fs-6">${item.tit}</pre></td>
 `
 tr.innerHTML = `
 <td><textarea rows=8 cols=100 class="badge bg-primary fs-6">${item.body}</textarea></td>

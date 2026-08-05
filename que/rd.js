@@ -39,19 +39,19 @@ const tbody = document.getElementById('tab');
         tbody.appendChild(tit);
         const tit = document.createElement('tr');
         tit.innerHTML = `
-        <td><pre class="badge bg-warning fs-5">${item.tit}</pre></td>
+        <td><pre class="badge bg-warning fs-4">${item.tit}</pre></td>
         `
 res.forEach(item => {
         const tr = document.createElement('tr');
 
         tr.innerHTML = `
-        <td><textarea class="badge bg-primary fs-5"><code>${item.body}</code></textarea></td>
+        <td><textarea class="badge bg-primary fs-4"><code>${item.body}</code></textarea></td>
         `;
 
         tit.after(tr);
         let dat= document.createElement('tr');
 dat.innerHTML = `
-        <td><pre class="badge bg-secondary fs-5">${item.tim}</pre></td>
+        <pre td><pre class="badge bg-secondary fs-4">${item.tim}</pre></td>
         `
         tr.after(dat);
 });

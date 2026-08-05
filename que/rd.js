@@ -15,7 +15,7 @@ async function rd(term,qid) {
     const db = new SQL.Database(new Uint8Array(buffer));
 
     const stmt = db.prepare("SELECT * FROM bash WHERE term=?");
-    stmt.bind([searchTerm]);
+    stmt.bind([term]);
 
     const res = [];
     while (stmt.step()) {
@@ -36,4 +36,3 @@ async function rd(term,qid) {
 
     return res;
 }
-

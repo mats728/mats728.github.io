@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-let tab=document.getElementById("htm")
+let tab=document.getElementById("Thtm")
 let htm=
 `
+<div class="p-2 bg-danger text-center text-white">htm</div>
 <table class="table align-middle text-center">
 <tbody>
 <tr>

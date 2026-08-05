@@ -1,1 +1,1 @@
-delete from usr where nam='naka';
+delete from bash where nam='naka';

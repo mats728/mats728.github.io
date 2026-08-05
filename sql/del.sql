@@ -1,2 +1,2 @@
-delete from usr where nam='hatt';
+delete from bash where rowid=1;
 

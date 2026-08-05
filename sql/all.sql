@@ -1,1 +1,1 @@
-select * from usr;
+select * from bash;

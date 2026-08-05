@@ -1,1 +1,1 @@
-select rowid,body from usr; 
+select rowid,body from bash; 

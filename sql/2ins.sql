@@ -1,6 +1,6 @@
-insert into usr(
+insert into bash(
 email,
-usr,
+bash,
 mnt,
 buy,
 ite

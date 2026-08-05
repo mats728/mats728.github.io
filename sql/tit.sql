@@ -1,1 +1,1 @@
-select title from usr; 
+select title from bash; 

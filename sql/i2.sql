@@ -1,11 +1,11 @@
 INSERT INTO bash (tit, term, body, tim) VALUES (
-'loadCSS',
+'loadJs',
 'js',
-'function loadCSS(href) {
-    const link = document.createElement("link");
+'function loadJs(href) {
+    const link = document.createElement("script");
     link.rel = "stylesheet";
     link.href = href;
-    document.head.appendChild(link);
+    document.body.appendChild(link);
 }',
 STRFTIME('%Y-%m-%d-%H-%M', 'now', '+9 hours')
 );

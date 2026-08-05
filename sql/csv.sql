@@ -1,2 +1,2 @@
 .mode csv 
-.import csv/usr.csv usr
+.import csv/bash.csv bash

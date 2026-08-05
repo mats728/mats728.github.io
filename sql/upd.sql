@@ -1,1 +1,1 @@
-update usr set pss='gour2010' where nam='gour';
+update bash set pss='gour2010' where nam='gour';

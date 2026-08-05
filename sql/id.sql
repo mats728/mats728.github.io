@@ -1,1 +1,1 @@
-select rowid from usr order by rowid asc; 
+select rowid from bash order by rowid asc; 

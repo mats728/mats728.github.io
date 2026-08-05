@@ -34,10 +34,10 @@ async function rd(searchTerm) {
         targetElement.textContent = JSON.stringify(res, null, 2);
     }
 
-    //return res;
+//return res;
 const tbody = document.getElementById('tab');
 
-    data.forEach(item => {
+data.forEach(item => {
         const tr = document.createElement('tr');
 
         tr.innerHTML = `
@@ -48,7 +48,7 @@ const tbody = document.getElementById('tab');
         `;
 
         tbody.appendChild(tr);
-    });
+});
 
 }
 

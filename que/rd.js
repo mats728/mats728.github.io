@@ -1,4 +1,4 @@
-async function rd(searchTerm) {
+async function rd(term,qid) {
     // Wait until initSqlJs is available on the window object
     while (typeof window.initSqlJs !== 'function') {
         await new Promise(resolve => setTimeout(resolve, 50));
@@ -29,7 +29,7 @@ async function rd(searchTerm) {
     console.log('result:', res);
 
     // Return the result to element with id 'Qbash'
-    const targetElement = document.getElementById('Qbash');
+    const targetElement = document.getElementById(qid);
     if (targetElement) {
         targetElement.textContent = JSON.stringify(res, null, 2);
     }

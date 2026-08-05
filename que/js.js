@@ -1,3 +1,3 @@
 window.addEventListener('load', () => {
-    rd("js");
+rd("js","Qjs");
 });

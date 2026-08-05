@@ -36,16 +36,24 @@ async function rd(term,qid) {
 //return res;
 
 const tbody = document.getElementById('tab');
+        tbody.appendChild(tit);
+        const tit = document.createElement('tr');
+        tit.innerHTML = `
+        <td><pre class="badge bg-warning fs-5">${item.tit}</pre></td>
+        `
 res.forEach(item => {
         const tr = document.createElement('tr');
 
         tr.innerHTML = `
-            <td><pre class="badge bg-info fs-5">${item.tit}</pre></td>
-            <td><pre class="badge bg-primary fs-5"><code>${item.body}</code></pre></td>
-            <td><pre class="badge bg-secondary fs-5">${item.tim}</pre></td>
+        <td><pre class="badge bg-primary fs-5"><code>${item.body}</code></pre></td>
         `;
 
-        tbody.appendChild(tr);
+        tit.after(tr);
+        let dat= document.createElement('tr');
+dat.innerHTML = `
+        <td><pre class="badge bg-secondary fs-5">${item.tim}</pre></td>
+        `
+        tr.after(dat);
 });
 
 }

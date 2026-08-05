@@ -12,19 +12,19 @@ let navbarHTML = `
 </a>
 </li>
 
-<li class="nav-item">
+<li class="bg-primary nav-item">
 <a class="nav-link text-white fw-medium" href="bash.htm">bash</a>
 </li>
-<li class="nav-item">
+<li class="bg-secondary nav-item">
 <a class="nav-link text-white fw-medium" href="cmd.htm">cmd</a>
 </li>
-<li class="nav-item">
+<li class="bg-warning nav-item">
 <a class="nav-link text-white fw-medium" href="db.htm">db</a>
 </li>
-<li class="nav-item">
+<li class="bg-danger nav-item">
 <a class="nav-link text-white fw-medium" href="htm.htm">htm</a>
 </li>
-<li class="nav-item">
+<li class="bg-success nav-item">
 <a class="nav-link text-white fw-medium" href="js.htm">js</a>
 </li>
 

@@ -1,37 +1,43 @@
 async function rd() {
-  const initSqlJs = window.initSqlJs;
-  const SQL = await initSqlJs({
-    locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/${file}`
-  });
+    // Wait until initSqlJs is available on the window object
+    while (typeof window.initSqlJs !== 'function') {
+        await new Promise(resolve => setTimeout(resolve, 50));
+    }
 
-  const response = await fetch('/db/bash.db');
-  const buffer = await response.arrayBuffer();
+    const initSqlJs = window.initSqlJs;
+    const SQL = await initSqlJs({
+        locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/${file}`
+    });
 
-  const db = new SQL.Database(new Uint8Array(buffer));
+    const response = await fetch('/db/bash.db');
+    const buffer = await response.arrayBuffer();
 
-  const stmt = db.prepare("SELECT * FROM bash WHERE term=?");
-  // Note: stmt.get("bash") executes the query for the first row,
-  // but to loop through all results with stmt.step(), use bind instead:
-  stmt.bind(["bash"]);
+    const db = new SQL.Database(new Uint8Array(buffer));
 
-  const res = [];
-  while (stmt.step()) {
-    const row = stmt.getAsObject();
-    res.push(row);
-  }
+    const stmt = db.prepare("SELECT * FROM bash WHERE term=?");
+    stmt.bind(["bash"]);
 
-  stmt.free();
-  db.close();
+    const res = [];
+    while (stmt.step()) {
+        const row = stmt.getAsObject();
+        res.push(row);
+    }
 
-  console.log('result:', res);
+    stmt.free();
+    db.close();
 
-  // Return the result to element with id 'Bdb'
-  const targetElement = document.getElementById('Qbash');
-  if (targetElement) {
-    targetElement.textContent = JSON.stringify(res, null, 2);
-  }
+    console.log('result:', res);
 
-  return res;
+    // Return the result to element with id 'Qbash'
+    const targetElement = document.getElementById('Qbash');
+    if (targetElement) {
+        targetElement.textContent = JSON.stringify(res, null, 2);
+    }
+
+    return res;
 }
 
-rd();
+// Automatically trigger once the page and scripts are ready
+window.addEventListener('load', () => {
+    rd();
+});

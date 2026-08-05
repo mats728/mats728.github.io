@@ -34,5 +34,21 @@ async function rd(term,qid) {
         targetElement.textContent = JSON.stringify(res, null, 2);
     }
 
-    return res;
+//return res;
+
+const tbody = document.getElementById('tab');
+data.forEach(item => {
+        const tr = document.createElement('tr');
+
+        tr.innerHTML = `
+            <td><strong>${item.tit}</strong></td>
+            <td><span class="badge bg-secondary">${item.term}</span></td>
+            <td><pre class="mb-0"><code>${item.body}</code></pre></td>
+            <td><small class="text-muted">${item.tim}</small></td>
+        `;
+
+        tbody.appendChild(tr);
+});
+
 }
+

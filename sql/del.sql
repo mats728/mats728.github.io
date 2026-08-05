@@ -1,2 +1,2 @@
-delete from bash where rowid=1;
+delete from bash where rowid=2;
 

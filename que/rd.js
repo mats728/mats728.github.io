@@ -45,7 +45,7 @@ res.forEach(item => {
         const tr = document.createElement('tr');
 
         tr.innerHTML = `
-        <td><pre class="badge bg-primary fs-5"><code>${item.body}</code></pre></td>
+        <td><textarea class="badge bg-primary fs-5"><code>${item.body}</code></textarea></td>
         `;
 
         tit.after(tr);

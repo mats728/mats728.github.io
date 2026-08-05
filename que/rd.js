@@ -42,7 +42,7 @@ res.forEach(item => {
         tr.innerHTML = `
             <td><pre class="badge bg-info">${item.tit}</pre></td>
             <td><pre class="badge bg-primary"><code>${item.body}</code></pre></td>
-            <td><small class="badge bg-secondary">${item.tim}</small></td>
+            <td><pre class="badge bg-secondary">${item.tim}</pre></td>
         `;
 
         tbody.appendChild(tr);

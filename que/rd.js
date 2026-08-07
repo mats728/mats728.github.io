@@ -44,7 +44,7 @@ tit.innerHTML = `
 <td><pre class="p-2 text-white bg-warning fs-6">${item.tit}</pre></td>
 `
 tr.innerHTML = `
-<td><textarea rows=8 cols=100 class="badge bg-primary fs-6">${item.body}</textarea></td>
+<td class=text-left><textarea rows=8 cols=50 class="badge bg-primary fs-6">${item.body}</textarea></td>
 `;
 dat.innerHTML = `
 <pre td><pre class="badge bg-secondary fs-6">${item.tim}</pre></td>
